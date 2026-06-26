@@ -87,6 +87,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="entities"/>
       <UnitOutputDirectory Value="../temp/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <CodeGeneration>

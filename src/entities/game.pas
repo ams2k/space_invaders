@@ -67,10 +67,10 @@ type
   public
     constructor Create;
     destructor Destroy; override;
-    procedure Draw;
-    procedure Update;
+    procedure DrawGame;
+    procedure UpdateGame;
     procedure HandleInput(AExitGame: Boolean);
-    procedure Reset;
+    procedure ResetGame;
     property Score: Integer read FScore;
     property HighScore: Integer read FHighScore;
     property Lives: Integer read FLives;
@@ -85,9 +85,10 @@ constructor TGame.Create;
 begin
   inherited Create;
 
+  FLives := 3;
+
   InitGame;
 
-  FLives := 3;
   FScore := 0;
   FHighScore := LoadHighScoreFromFile;
 
@@ -161,7 +162,7 @@ begin
   end;
 end;
 
-procedure TGame.Draw;
+procedure TGame.DrawGame;
 var
   I : Integer;
 begin
@@ -222,16 +223,20 @@ begin
 
   FMysteryShipSpawnInterval := GetRandomValue(10, 20);
 
-  FLives += 1;
-  FRunning := True;
-
   FAlienDirection := 1;
   FAlienLaserInterval := 0.35;
+
+  FRunning := True;
 end;
 
-procedure TGame.Reset;
+procedure TGame.ResetGame;
 // reinicia o jogo
 begin
+  if FLives < 1 then
+    FLives := 3
+  else
+    Inc(FLives, 1);
+
   DeinitNonMedia;
   InitGame;
 end;
@@ -347,14 +352,15 @@ begin
   end;
 end;
 
-procedure TGame.Update;
+procedure TGame.UpdateGame;
 // atualização de todos os objetos do jogo
 begin
   if not FRunning then
   begin
-    if IsKeyPressed(KEY_ENTER) then
-      Reset;
-    //Exit;
+    if IsKeyPressed(KEY_ENTER) then begin
+      ResetGame;
+      Exit;
+    end;
   end;
 
   // Exibe a nave alien mistério em intervalos

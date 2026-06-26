@@ -8,8 +8,9 @@
         <Filename Value="invaders.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="10" Y="14"/>
-        <UsageCount Value="40"/>
+        <TopLine Value="100"/>
+        <CursorPos X="72" Y="114"/>
+        <UsageCount Value="43"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -19,7 +20,7 @@
         <EditorIndex Value="1"/>
         <TopLine Value="91"/>
         <CursorPos X="3" Y="115"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="43"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -29,7 +30,7 @@
         <EditorIndex Value="2"/>
         <TopLine Value="18"/>
         <CursorPos X="45" Y="16"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="43"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -39,7 +40,7 @@
         <EditorIndex Value="3"/>
         <TopLine Value="41"/>
         <CursorPos X="78" Y="19"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="43"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -49,7 +50,7 @@
         <EditorIndex Value="9"/>
         <TopLine Value="73"/>
         <CursorPos X="20" Y="29"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="43"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -59,7 +60,7 @@
         <EditorIndex Value="5"/>
         <TopLine Value="83"/>
         <CursorPos X="27" Y="126"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="43"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -69,7 +70,7 @@
         <EditorIndex Value="6"/>
         <TopLine Value="22"/>
         <CursorPos X="5" Y="12"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="43"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -77,9 +78,7 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Game"/>
         <EditorIndex Value="7"/>
-        <TopLine Value="185"/>
-        <CursorPos Y="198"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="43"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -88,7 +87,7 @@
         <UnitName Value="GameUtils"/>
         <EditorIndex Value="8"/>
         <CursorPos X="45" Y="16"/>
-        <UsageCount Value="39"/>
+        <UsageCount Value="42"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -97,7 +96,7 @@
         <UnitName Value="Constants"/>
         <EditorIndex Value="4"/>
         <CursorPos X="13" Y="19"/>
-        <UsageCount Value="39"/>
+        <UsageCount Value="42"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -134,82 +133,82 @@
         <UsageCount Value="10"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="24">
+    <JumpHistory HistoryIndex="29">
       <Position>
-        <Filename Value="entities/game.pas"/>
-        <Caret Line="642" TopLine="621"/>
+        <Filename Value="invaders.lpr"/>
+        <Caret Line="90" Column="16" TopLine="116"/>
       </Position>
       <Position>
         <Filename Value="entities/game.pas"/>
-        <Caret Line="649" TopLine="631"/>
+        <Caret Line="365" Column="7" TopLine="355"/>
       </Position>
       <Position>
         <Filename Value="entities/game.pas"/>
-        <Caret Line="382" Column="55" TopLine="368"/>
+        <Caret Line="240" Column="3" TopLine="237"/>
       </Position>
       <Position>
         <Filename Value="entities/game.pas"/>
-        <Caret Line="383" Column="36" TopLine="369"/>
+        <Caret Line="90" Column="21" TopLine="80"/>
       </Position>
       <Position>
         <Filename Value="entities/game.pas"/>
-        <Caret Line="373" Column="35" TopLine="363"/>
+        <Caret Line="71" Column="18" TopLine="57"/>
+      </Position>
+      <Position>
+        <Filename Value="entities/game.pas"/>
+        <Caret Line="359" TopLine="349"/>
+      </Position>
+      <Position>
+        <Filename Value="entities/game.pas"/>
+        <Caret Line="356" TopLine="356"/>
       </Position>
       <Position>
         <Filename Value="invaders.lpr"/>
-        <Caret Line="121" Column="39" TopLine="38"/>
+        <Caret Line="106" Column="14" TopLine="128"/>
       </Position>
       <Position>
         <Filename Value="entities/game.pas"/>
-        <Caret Line="301" Column="12" TopLine="293"/>
+        <Caret Line="355" Column="39" TopLine="350"/>
+      </Position>
+      <Position>
+        <Filename Value="entities/game.pas"/>
+        <Caret Line="42" Column="5" TopLine="80"/>
+      </Position>
+      <Position>
+        <Filename Value="entities/game.pas"/>
+        <Caret Line="88" Column="9" TopLine="348"/>
+      </Position>
+      <Position>
+        <Filename Value="entities/game.pas"/>
+        <Caret Line="235" Column="3" TopLine="232"/>
       </Position>
       <Position>
         <Filename Value="invaders.lpr"/>
-        <Caret Line="77" Column="77" TopLine="64"/>
+        <Caret Line="111" Column="49" TopLine="125"/>
       </Position>
       <Position>
         <Filename Value="entities/game.pas"/>
-        <Caret Line="78" Column="17" TopLine="70"/>
+        <Caret Line="362" TopLine="350"/>
       </Position>
       <Position>
         <Filename Value="entities/game.pas"/>
-        <Caret Line="243" Column="3" TopLine="239"/>
+        <Caret Line="364" Column="11" TopLine="350"/>
       </Position>
       <Position>
         <Filename Value="entities/game.pas"/>
-        <Caret Line="99" Column="15" TopLine="85"/>
+        <Caret Line="234" Column="6" TopLine="232"/>
       </Position>
       <Position>
         <Filename Value="entities/game.pas"/>
-        <Caret Line="378" Column="28" TopLine="363"/>
+        <Caret Line="80" TopLine="59"/>
       </Position>
       <Position>
         <Filename Value="entities/game.pas"/>
-        <Caret Line="488" Column="33" TopLine="473"/>
+        <Caret Line="73" Column="19" TopLine="59"/>
       </Position>
       <Position>
         <Filename Value="entities/game.pas"/>
-        <Caret Line="71" Column="18" TopLine="62"/>
-      </Position>
-      <Position>
-        <Filename Value="entities/game.pas"/>
-        <Caret Line="360" Column="36" TopLine="354"/>
-      </Position>
-      <Position>
-        <Filename Value="entities/game.pas"/>
-        <Caret Line="358" Column="64" TopLine="352"/>
-      </Position>
-      <Position>
-        <Filename Value="entities/game.pas"/>
-        <Caret Line="363" Column="8" TopLine="355"/>
-      </Position>
-      <Position>
-        <Filename Value="entities/game.pas"/>
-        <Caret Line="373" Column="62" TopLine="361"/>
-      </Position>
-      <Position>
-        <Filename Value="entities/game.pas"/>
-        <Caret Line="596" Column="3" TopLine="346"/>
+        <Caret Line="361" TopLine="354"/>
       </Position>
       <Position>
         <Filename Value="entities/game.pas"/>
@@ -217,23 +216,43 @@
       </Position>
       <Position>
         <Filename Value="entities/game.pas"/>
-        <Caret Line="368" Column="14" TopLine="356"/>
+        <Caret Line="217" Column="30" TopLine="202"/>
       </Position>
       <Position>
         <Filename Value="entities/game.pas"/>
-        <Caret Line="372" Column="3" TopLine="356"/>
+        <Caret Line="241" Column="12" TopLine="81"/>
+      </Position>
+      <Position>
+        <Filename Value="entities/game.pas"/>
+        <Caret Line="70" Column="20" TopLine="62"/>
       </Position>
       <Position>
         <Filename Value="invaders.lpr"/>
-        <Caret Line="144" Column="24" TopLine="50"/>
+        <Caret Line="131" Column="23" TopLine="86"/>
       </Position>
       <Position>
         <Filename Value="invaders.lpr"/>
-        <Caret Line="4" Column="66"/>
+        <Caret Line="129" Column="25" TopLine="118"/>
+      </Position>
+      <Position>
+        <Filename Value="entities/game.pas"/>
+        <Caret Line="165" Column="20" TopLine="165"/>
       </Position>
       <Position>
         <Filename Value="invaders.lpr"/>
-        <Caret Line="17" Column="8"/>
+        <Caret Line="129" Column="25" TopLine="106"/>
+      </Position>
+      <Position>
+        <Filename Value="invaders.lpr"/>
+        <Caret Line="131" Column="15" TopLine="43"/>
+      </Position>
+      <Position>
+        <Filename Value="entities/game.pas"/>
+        <Caret Line="86" Column="3" TopLine="102"/>
+      </Position>
+      <Position>
+        <Filename Value="invaders.lpr"/>
+        <Caret Line="22" Column="12" TopLine="7"/>
       </Position>
     </JumpHistory>
     <RunParams>

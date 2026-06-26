@@ -8,8 +8,9 @@ program invaders;
 {$mode objfpc}{$H+}
 
 uses
+cmem,
 {$IFDEF LINUX}
-cmem, cthreads,
+cthreads,
 {$ENDIF}
 sysutils,
 {uncomment if necessary}
@@ -79,7 +80,7 @@ begin
             ScoreText := FormatScoreWithLeadingZeros(G.Score, 5);
             DrawTextEx(FontGame, PChar(ScoreText), Vector2Create(50, 45), 34, 2, COLOR_YELLOW);
 
-            DrawTextEx(FontGame, 'F3 = EXIT', Vector2Create(260, 15), 34, 2, GREEN);
+            DrawTextEx(FontGame, 'F3 = SAIR', Vector2Create(260, 15), 34, 2, GREEN);
 
             DrawTextEx(FontGame, 'HIGH SCORE', Vector2Create(570, 15), 34, 2, COLOR_YELLOW);
             HighScoreText := FormatScoreWithLeadingZeros(G.HighScore, 5);
@@ -99,18 +100,18 @@ begin
                 LifeOffset += 50;
               end;
 
-              DrawTextEx(FontGame, PChar( Format('LEVEL %.*d',[1, lNivel]) ), Vector2Create(570, 740), 34, 2, COLOR_YELLOW);
+              DrawTextEx(FontGame, PChar( Format('NIVEL %.*d',[2, lNivel]) ), Vector2Create(600, 740), 34, 2, COLOR_YELLOW);
             end
             else
             begin
               // Você ganhou ou perdeu, iniciar novo jogo ?
-              DrawTextEx(FontGame, '<ENTER> new game, <F3> exit', Vector2Create(100, 745), 24, 2, WHITE);
+              DrawTextEx(FontGame, '<ENTER> Continuar, <F3> Sair', Vector2Create(100, 745), 24, 2, WHITE);
 
               if G.Lives > 0 then
               begin
                 // você ganhou
                 if LBlink < 50 then
-                  DrawTextEx(FontGame, 'YOU WIN!', Vector2Create(570, 740), 34, 2, GREEN);
+                  DrawTextEx(FontGame, 'VOCE VENCEU!', Vector2Create(560, 740), 34, 2, GREEN);
 
                 LBlink += 1;
                 if LBlink > 80 then LBlink := 0;
@@ -119,7 +120,7 @@ begin
               begin
                 // você perdeu
                 if LBlink < 50 then
-                  DrawTextEx(FontDigital, 'GAME OVER', Vector2Create(570, 740), 34, 2, RED);
+                  DrawTextEx(FontDigital, 'FIM DE JOGO', Vector2Create(570, 740), 34, 2, RED);
 
                 LBlink += 1;
                 if LBlink > 80 then LBlink := 0;
@@ -127,19 +128,24 @@ begin
             end;
 
 
-            G.Draw; { desenha os objetos do jogo da tela }
+            G.DrawGame; { desenha os objetos do jogo da tela }
 
             // pressiionando F3, abre tela perguntando se quer sair do jogo
             if IsKeyPressed(KEY_F3) then
               ExitGame := True;
 
             if not ExitGame then
-              G.Update { atualiza os objetos dos jogo na tela }
+              G.UpdateGame { atualiza os objetos dos jogo na tela }
             else
             begin
-              // apresenta a tela perguntando se quer sair do jogo
-              DrawRectangle(200, 200, 410, 200, COLOR_BG);
-              DrawRectangleLinesEx(RectangleCreate(202, 202, 407, 197), 1, RED);
+              // F3 = Apresenta a tela perguntando se quer sair do jogo
+
+              // retângulo com cantos arredondados e fundo preenchido
+              DrawRectangleRounded(RectangleCreate(200, 200, 410, 200), 0.18, 20, COLOR_BG);
+              // retângulo com cantos arredondados sem preenchimento do fundo
+              DrawRectangleRoundedLines(RectangleCreate(205, 205, 400, 190), 0.18, 20, COLOR_YELLOW);
+              // retângulo sem preenchimento do fundo
+              //DrawRectangleLinesEx(RectangleCreate(202, 202, 407, 197), 1, RED);
               DrawText('SAIR DO JOGO', 265, 220, 40, RED);
               DrawText('ENTER = CONTINUAR / ESC = SAIR', 220, 360, 20, COLOR_BLUE);
 
@@ -148,7 +154,6 @@ begin
               else if IsKeyPressed(KEY_ENTER) then
               begin
                 LBlink := 0;
-                lNivel += 1;
                 ExitGame := False; // continuar jogando
               end;
             end;
